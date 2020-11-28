@@ -5,16 +5,6 @@ class Libffi < Formula
   mirror "https://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.2.1.orig.tar.gz"
   sha256 "d06ebb8e1d9a22d19e38d63fdb83954253f39bedc5d46232a05645685722ca37"
 
-  bottle do
-    cellar :any
-    sha256 "010ee87b8cfe2351092044a48663462410fb49872ef70ebe44d933cd9bd70901" => :catalina
-    sha256 "8d9b153f501fcc5103bb96b00be9a1aea6a0c09e5d61b9acfb998546c3301582" => :mojave
-    sha256 "c63fbf004a3c314b7af3bd6b8fc50dc33c06730235cf7e245cb206307dca0933" => :high_sierra
-    sha256 "13836da147e311ac2920df5a1d0f04b672ce89204334b5e0233b428572860483" => :sierra
-    sha256 "82e5176c758030c4d7571ebd7b412624eed28b8379069c27e366952569168bda" => :el_capitan
-    sha256 "9047ca06422e869790ec80adf37cedb3eff6e422094bde0371e24d9bb18dc3f0" => :yosemite
-  end
-
   head do
     url "https://github.com/atgreen/libffi.git"
     depends_on "autoconf" => :build
